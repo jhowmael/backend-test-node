@@ -2,8 +2,7 @@
 API REST para gerenciamento de tarefas, desenvolvida como parte de um desafio técnico para a vaga de Desenvolvedor(a) Júnior.
 
 ---
-
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas  
 - **NestJS** – Framework Node.js para construção de aplicações escaláveis.  
 - **PostgreSQL** – Banco de dados relacional.  
 - **Kysely** – QueryBuilder para SQL com tipagem.  
@@ -12,8 +11,7 @@ API REST para gerenciamento de tarefas, desenvolvida como parte de um desafio t�
 - **Jest** – Framework de testes.  
 
 ---
-
-## Endpoints Disponíveis
+## Endpoints Disponíveis  
 - `POST /tasks` – Cria uma nova tarefa.  
 - `GET /tasks` – Lista todas as tarefas.  
 - `GET /tasks/status/:status` – Lista tarefas por status (`pending`, `in-progress`, `completed`).  
@@ -22,8 +20,7 @@ API REST para gerenciamento de tarefas, desenvolvida como parte de um desafio t�
 - `DELETE /tasks/:id` – Remove uma tarefa.
 
 ---
-
-## Links Úteis
+## Links Úteis  
 - [Documentação Swagger](https://swagger.io/docs)  
 - [Documentação NestJS](https://docs.nestjs.com)  
 - [Documentação PostgreSQL](https://www.postgresql.org/docs)  
@@ -32,7 +29,6 @@ API REST para gerenciamento de tarefas, desenvolvida como parte de um desafio t�
 - [Documentação Jest](https://jestjs.io/docs/getting-started)
 
 ---
-
 ## Instruções de Execução
 
 ### 1. Clonar o Repositório  
@@ -41,18 +37,14 @@ Clone o repositório e acesse a pasta do projeto:
 git clone https://github.com/seu-usuario/gbm-tasks-api.git
 ```
 ```bash
-cd gbm-tasks-api  
+cd backend-test-node  
 ```
-
----
 
 ### 2. Subir os Containers com Docker  
 Inicie os serviços (PostgreSQL e a aplicação NestJS):  
 ```bash
 docker-compose up -d --build
 ```
-
----
 
 ### 3. Verificar se os Containers Estão Ativos  
 Execute o comando:
@@ -67,8 +59,6 @@ CONTAINER ID   IMAGE                   ...   PORTS                    NAMES
 xxxxxx         backend-test-node-api   ...   0.0.0.0:3000->3000/tcp   backend-test-node-api-1
 yyyyyy         postgres:15             ...   0.0.0.0:5432->5432/tcp   postgres_db
 ```
-
----
 
 ### 4. Criar a Tabela Manualmente (Migration SQL)
 
@@ -89,29 +79,29 @@ psql -U user -d gbm
 ```bash  
 \i /tmp/001_create_tasks_table.sql  
 ```
+
+**Utilize o seguinte comando para verficar se as tabelas estão criadas**
 ```bash  
 \dt 
 ```
-
 > ⚠️ Lembre-se de que os valores `user` e `gbm` devem coincidir com os definidos nas variáveis `POSTGRES_USER` e `POSTGRES_DB` no `docker-compose.yml`.
 
----
 
-### 5. Instalar Dependências da Aplicação  
-Instale os pacotes necessários:  
+### 5. Retornar a raiz do projeto  
+
+**Utilize os seguintes comandos para retornar a raiz do projeto**  
+```bash
+\q  
+```
+```bash
+exit  
+```
+
+### 6. Instalar Dependências da Aplicação  
+Na raiz do projeto exevute o comando para instalar os pacotes necessários:  
 ```bash
 npm install
 ```
-
----
-
-### 6. Rodar a Aplicação NestJS  
-Inicie a aplicação em modo de desenvolvimento:  
-```bash
-npm run start:dev
-```
-
----
 
 ### 7. Rodar Testes do Jest  
 Execute o comando:  
@@ -119,16 +109,12 @@ Execute o comando:
 npm run test
 ```
 
----
-
 ### 8. Acessar a Documentação da API (Swagger)  
-Abra no navegador:
+Abra no navegador e acesse:
 ```
 http://localhost:3000/api
 ```
-
 ---
-
 ## Participante  
 **Nome:** Jonatan Ismael dos Santos  
 **Email:** jonatan.ismael996@gmail.com  
@@ -136,6 +122,5 @@ http://localhost:3000/api
 **LinkedIn:** [jonatan-ismael-dos-santos](https://www.linkedin.com/in/jonatan-ismael-dos-santos-182326219/)
 
 ---
-
 ## 🙏 Agradecimento  
 Obrigado pela oportunidade, foi muito divertido! 🚀

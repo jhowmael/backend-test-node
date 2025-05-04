@@ -25,31 +25,31 @@ API REST para gerenciamento de tarefas, desenvolvida como parte de um desafio t�
 - Documentação Docker: https://docs.docker.com/build-cloud
 
 # Instruções
-1. Clonar o Repositório
-git clone https://github.com/seu-usuario/gbm-tasks-api.git
-cd gbm-tasks-api
+1. Clonar o Repositório  
+git clone https://github.com/seu-usuario/gbm-tasks-api.git  
+cd gbm-tasks-api  
 
-2. Subir o Banco de Dados com Docker
-docker-compose up -d
-Isso iniciará um container PostgreSQL acessível na porta padrão (5432).
+2. Subir o Banco de Dados com Docker  
+docker-compose up -d  
+Isso iniciará um container PostgreSQL acessível na porta padrão (5432).  
 
-3. Instalar Dependências
-npm install
+3. Instalar Dependências  
+npm install  
 
-4. Criar as Tabelas (Rodar Migrations)
-psql -h localhost -U postgres -d tasks_db -f src/database/migrations/init.sql
+4. Criar as Tabelas (Rodar Migrations)  
+psql -h localhost -U postgres -d tasks_db -f src/database/migrations/init.sql  
 
-5. Rodar o Projeto
-npm run start:dev
+5. Rodar o Projeto  
+npm run start:dev  
 
-6. Acessar a Documentação da API (Swagger)
-http://localhost:3000/api
+6. Acessar a Documentação da API (Swagger)  
+http://localhost:3000/api  
 
 # Participante:
-Nome: Jonatan Ismael dos Santos
-Email: jonatan.ismael996@gmail.com
-Telefone: (13) 99666-2857
-Linkedin: https://www.linkedin.com/in/jonatan-ismael-dos-santos-182326219/
+Nome: Jonatan Ismael dos Santos  
+Email: jonatan.ismael996@gmail.com  
+Telefone: (13) 99666-2857  
+Linkedin: https://www.linkedin.com/in/jonatan-ismael-dos-santos-182326219/  
 
 ## Obrigado!
 Obrigado pela oportunidade, foi muito divertido! 🚀
